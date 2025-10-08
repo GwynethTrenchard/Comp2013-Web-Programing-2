@@ -1,4 +1,5 @@
 //this is not the correct way to store minipulate and re-render components
+// you cannot jsut use a reagular variable
 export default function BadCounter() {
   let count = 0;
   return (
