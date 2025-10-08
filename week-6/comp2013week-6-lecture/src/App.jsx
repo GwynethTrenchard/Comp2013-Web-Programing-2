@@ -1,11 +1,12 @@
 import "./App.css";
 import ProductCard from "./Components/ProductCard";
-import fruits from "./data/data";
+import ProductCardsContainer from "./Components/ProductCardsContainer";
+import data from "./data/data";
 
 function App() {
   return (
     <>
-      <ProductCard products={fruits} />
+      <ProductCardsContainer data={data} />
     </>
   );
 }

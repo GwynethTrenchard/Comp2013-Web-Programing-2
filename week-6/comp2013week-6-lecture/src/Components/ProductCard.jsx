@@ -27,15 +27,52 @@ export default function ProductCard({
       {/*on chnage is responsible to set the state to the option the user pciks from the menue*/}
       <select
         value={productQuanity.priceOptions}
-        onChange={(e) =>
-          setProductQuantity({
-            ...productQuanity,
-            priceOptions: e.target.value,
+        onChange={(e) => {
+          setProductQuantity((prevData) => {
+            return { ...prevData, priceOptions: parseFloat(e.target.value) };
+          });
+        }}
+      >
+        {priceOptions.map((price, index) => (
+          <option key={index} value={price}>
+            {price.toFixed(2)}
+          </option>
+        ))}
+      </select>
+      {/* display total price */}
+      <p>
+        Total Price: $
+        {(productQuanity.quantity * productQuanity.priceOptions).toFixed(2)}
+      </p>
+
+      {/* button to add quanity */}
+
+      <button
+        onClick={() =>
+          setProductQuantity((prevData) => {
+            return { ...prevData, quantity: prevData.quantity + 1 }; // not ++ becasue then it will only add
+            // when it referses, so it wont work for the first click
           })
         }
       >
-        {<map name=""></map>}
-      </select>
+        Add
+      </button>
+
+      {/* button to remove quanity */}
+
+      <button
+        onClick={() =>
+          setProductQuantity((prevData) => {
+            return {
+              ...prevData,
+              quantity: prevData.quantity > 0 ? prevData.quantity - 1 : 0, // terniry to check if quantity is
+              // less then 0 so u dont have negative fruit
+            };
+          })
+        }
+      >
+        Remove
+      </button>
     </div>
   );
 }
