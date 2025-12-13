@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa7796"
+  },
+  "name": "Mickey Mouse",
+  "contact": {
+    "email": "mickey.mouse@disney.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Main Street, Disneyland"
+  },
+  "image": "https://i.pinimg.com/736x/65/d6/cf/65d6cfcb2bb5193d6d160157b34b2bd0.jpg"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa7797"
+  },
+  "name": "Minnie Mouse",
+  "contact": {
+    "email": "minnie.mouse@disney.com",
+    "phone": "+1 (555) 987-6543",
+    "address": "456 Fantasy Lane, Disneyland"
+  },
+  "image": "https://i.pinimg.com/474x/2e/2c/87/2e2c87d9460452c9ee8043dd3f0bd62f.jpg"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa7798"
+  },
+  "name": "Donald Duck",
+  "contact": {
+    "email": "donald.duck@disney.com",
+    "phone": "+1 (555) 789-0123",
+    "address": "789 Toon Town, Disneyland"
+  },
+  "image": "https://media.istockphoto.com/id/458717411/photo/disneys-donald-duck.jpg?s=612x612&w=0&k=20&c=KaUFZOkYUiAJCb3zY5VETsFIfUCTABnl6D6cEogsS0k="
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa7799"
+  },
+  "name": "Goofy",
+  "contact": {
+    "email": "goofy@disney.com",
+    "phone": "+1 (555) 234-5678",
+    "address": "101 Silly Street, Disneyland"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa779a"
+  },
+  "name": "Cinderella",
+  "contact": {
+    "email": "cinderella@disney.com",
+    "phone": "+1 (555) 345-6789",
+    "address": "Castle, Disneyland"
+  },
+  "image": "https://i.pinimg.com/564x/b1/4a/0f/b14a0f4e6acb5ecc382d26a573946453.jpg"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa779b"
+  },
+  "name": "Simba",
+  "contact": {
+    "email": "simba@priderock.com",
+    "phone": "+1 (555) 876-5432",
+    "address": "Pride Rock, Africa"
+  },
+  "image": "https://i.pinimg.com/736x/df/e8/5d/dfe85d099aedd737d1fae70a8d4d3c40.jpg"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa779c"
+  },
+  "name": "Ariel",
+  "contact": {
+    "email": "ariel@underthesea.com",
+    "phone": "+1 (555) 321-0987",
+    "address": "Under the Sea, Atlantica"
+  },
+  "image": "https://e7.pngegg.com/pngimages/49/18/png-clipart-disney-ariel-illustration-ariel-flounder-belle-the-little-mermaid-disney-princess-ariel-s-poster-fictional-character-thumbnail.png"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa779d"
+  },
+  "name": "Buzz Lightyear",
+  "contact": {
+    "email": "buzz.lightyear@spacecommand.com",
+    "phone": "+1 (555) 543-2109",
+    "address": "Star Command, Space"
+  },
+  "image": "https://kh.wiki.gallery/images/thumb/b/b1/Buzz_Lightyear_KHIII.png/473px-Buzz_Lightyear_KHIII.png"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa779e"
+  },
+  "name": "Elsa",
+  "contact": {
+    "email": "elsa@arendelle.com",
+    "phone": "+1 (555) 789-6543",
+    "address": "Ice Palace, Arendelle"
+  },
+  "image": "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280w/products/89558/95365/Princess-Elsa-Frozen-Disney-Lifesize-Cardboard-Cutout-buy-now-at-starstills__33630.1629111629.jpg?c=2"
+},
+{
+  "_id": {
+    "$oid": "690abdc935e4e520cbfa779f"
+  },
+  "name": "Woody",
+  "contact": {
+    "email": "woody@toystory.com",
+    "phone": "+1 (555) 234-5678",
+    "address": "Andy's Room, Toy Story Land"
+  },
+  "image": "https://i.pinimg.com/originals/a3/59/52/a359522b7fec60770094aae8cf469539.png"
+}]
