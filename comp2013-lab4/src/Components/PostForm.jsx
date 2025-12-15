@@ -26,7 +26,7 @@ export default function PostForm({
           onChange={(e) => handleOnChange(e)}
         />
         <br />
-        <button onClick={(e) => handleCreatePost(e)}>Post</button>
+        <button onClick={(e) => handleCreatePost(e)}>submit</button>
       </form>
     </div>
   );

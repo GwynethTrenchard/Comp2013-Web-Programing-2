@@ -25,7 +25,7 @@ export default function FakeApiApp() {
     //   index++;
     // });
     setData({ title: data[1].title, body: data[1].body });
-    setIsLoading(false);
+    // setIsLoading(false);
   };
   useEffect(() => {
     fetchPost();
@@ -35,18 +35,20 @@ export default function FakeApiApp() {
   const handleCreatePost = (e) => {
     e.preventDefault();
     if (newPost.title === "" || newPost.body === "") {
-      alert("Please add a title before posting!") ||
-        alert("Your post is empty! Please write something before posting!");
+      alert("Please add a title and content before posting!");
+    } else {
+      setNewPost((prevNewPost) => {
+        return {
+          ...prevNewPost,
+          title: newPost.title,
+          body: newPost.body,
+        };
+      });
+      setNewPost({
+        title: "",
+        body: "",
+      });
     }
-    //else {
-    //   setData((prevList) => {
-    //     return [...prevList, newPost];
-    //   });
-    setNewPost({
-      title: "",
-      body: "",
-    });
-    //}
   };
 
   const handleOnChange = (e) => {
@@ -66,7 +68,7 @@ export default function FakeApiApp() {
         handleOnChange={handleOnChange}
         newPost={newPost}
       />
-      <PostContainer data={data} />
+      <PostContainer data={data} newPost={newPost} />
     </div>
   );
 }
