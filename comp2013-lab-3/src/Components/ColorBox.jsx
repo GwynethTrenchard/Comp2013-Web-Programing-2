@@ -1,30 +1,77 @@
 import { useState } from "react";
 import data from "../Data/data";
-const colourData = data[0];
+// const colourData = data;
 const random = Math.floor(Math.random() * data.length); // this is working
 
-export default function ColorBox({ colourBox = colourData }) {
-  console.log(colourData);
-  const [boxColor, setBoxColour] = useState({
-    //compound state to track the product quanity
-    colourBox: colourBox[0],
-  });
-  //
-  // console.log(random, colourBox[random]);
-  return (
-    <div className="ColorBox">
-      {/* create a button */}
-      <button
-        onClick={() =>
-          setBoxColour((prevData) => {
-            const colour = (random, colourBox[random]);
+export default function ColorBox({ colors }) {
+  const [newColor, setNewColor] = useState();
+  const colorOnClick = () => {
+    setNewColor((prevNewColor) => {
+      newColor = (random, colors[random]);
+      return { ...prevNewColor, newColor };
+    });
+  };
+  //console.log(newColor);
+  // style = { backgroundColor: newColor };
 
-            return { ...prevData, colour };
-          })
-        }
-      ></button>
-    </div>
+  // const colour = (random, colourBox[random]);
+  //           console.log(colourBox[random]);
+  //           // style = { backgroundColor: colourBox[random] };
+  //           return { ...prevBoxColor, colour };
+
+  return (
+    <div
+      className="ColorBox"
+      // key={index}
+      onClick={() => colorOnClick()}
+      style={{ backgroundColor: colors }}
+    ></div>
+
+    // <div className="ColorBoxesContainer" style={{ backgroundColor: "yellow" }}>
+    //   {/* {colors.map((color, index) => ( */}
+    //   <div
+    //     className="ColorBox"
+    //     // key={index}
+    //     // style={{ backgroundColor: color }}
+    //     onClick={() => handleClick(colors)}
+    //   ></div>
+    //   {/* ))} */}
+    // </div>
   );
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  /////////////////////////////////////////////////////////////////////
+  // console.log(colourData);
+  // const [boxColor, setBoxColour] = useState({
+  //   //compound state to track the product quanity
+  //   colourBox: colourBox[random],
+  // });
+  // //
+  // // console.log(random, colourBox[random]);
+  // return (
+  //   <div className="ColorBox">
+  //     {/* create a button */}
+  //     <button
+  //       onClick={() =>
+  //         setBoxColour((prevBoxColor) => {
+  //           const colour = (random, colourBox[random]);
+  //           console.log(colourBox[random]);
+  //           // style = { backgroundColor: colourBox[random] };
+  //           return { ...prevBoxColor, colour };
+  //         })
+  //       }
+  //     ></button>
+  //   </div>
+  //);
 }
 
 // <select

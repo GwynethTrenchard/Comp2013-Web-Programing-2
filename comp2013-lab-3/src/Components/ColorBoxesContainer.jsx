@@ -1,9 +1,9 @@
 import ColorBox from "./ColorBox";
 
-export default function ColorBoxesContainer(colours) {
+export default function ColorBoxesContainer({ colors }) {
   return (
     //className="ColorBoxesContainer"
-    <div color={colours[0]}>
+    <div color={colors[0]}>
       {/* {data.map((color) => ( */}
       <ColorBox />
       {/* ))} */}
